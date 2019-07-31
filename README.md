@@ -40,3 +40,36 @@ Currently, the code to interact with AWS resides in the `cloud` directory. Outsi
 
 ```
 python setup_s3_bucket.py
+```
+
+## Setup
+
+Define your environment file then run the following scripts to setup your cost and usage report.
+
+1. Create S3 bucket
+```
+python setup_s3_bucket.py
+```
+
+2. Set cost usage policy on S3 bucket and create cost report definiton
+```
+python setup_cost_usage_report.py
+```
+
+3. List your cost usage report definitions
+```
+python list_cost_usage_reports.py
+```
+
+## Teardown
+Clean up your cost and usage report resources.
+
+1. Remove cost usage report definition
+```
+python remove_cost_usage_report.py
+```
+
+2. Remove S3 bucket
+```
+python remove_s3_bucket.py
+```
